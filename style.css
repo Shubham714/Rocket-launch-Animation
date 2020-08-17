@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  background: url('images/planet.png');
+  background-size: fill;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+img {
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  animation: fly 5s ease-in;
+}
+
+@keyframes fly {
+  0% {
+    transform: translate(-50%, 0);
+  }
+  100% {
+    transform: translate(-50%, -100vh);
+  }
+}
